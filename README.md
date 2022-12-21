@@ -17,7 +17,7 @@ Note: Output data files will not immediately be moved to the `data/` directory. 
 
 ### Data Loading
 
-As Pandas `DataFrame`:
+Build merged frames as Pandas `DataFrame`:
 
 ```python
 from codstats.data import DataStore
@@ -30,3 +30,5 @@ attach_player_df = store.get_player_dataframe(player_name="Attach")
 ```
 
 From here data can be manipulated as usual with Pandas.
+
+Alternatively the CSV files in `data/` can be loaded and manipulated manually.
