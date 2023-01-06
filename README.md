@@ -20,9 +20,9 @@ Note: Output data files will not immediately be moved to the `data/` directory. 
 Build merged frames as Pandas `DataFrame`:
 
 ```python
-from codstats.data import DataStore
+from codstats.pandas_data import PandasDataStore
 
-store = DataStore("data/")
+store = PandasDataStore("data/")
 
 overall_df = store.get_overall_dataframe()
 rokkr_team_df = store.get_team_dataframe(team_name="Minnesota Rokkr")
