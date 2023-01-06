@@ -31,4 +31,16 @@ attach_player_df = store.get_player_dataframe(player_name="Attach")
 
 From here data can be manipulated as usual with Pandas.
 
+Polars `DataFrame` format is also supported:
+
+```python
+from codstats.polars_data import PolarsDataStore
+
+store = PolarsDataStore("data/")
+
+overall_df = store.get_overall_dataframe()
+rokkr_team_df = store.get_team_dataframe(team_name="Minnesota Rokkr")
+attach_player_df = store.get_player_dataframe(player_name="Attach")
+```
+
 Alternatively the CSV files in `data/` can be loaded and manipulated manually.
