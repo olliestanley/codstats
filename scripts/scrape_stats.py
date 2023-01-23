@@ -24,7 +24,7 @@ def main():
         match_games = matches_games.loc[matches_games.Match == match[0], "Game"]
 
         if any(
-            match_games.iloc[n] in players_games["Game"]
+            match_games.iloc[n] in players_games["Game"].to_numpy()
             for n in range(len(match_games))
         ):
             continue
